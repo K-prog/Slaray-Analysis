@@ -15,8 +15,8 @@
 	<h1>Salary Analysis</h1>
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="experience" placeholder="Total Experience(yrs)" required="required" />
-        <input type="text" name="test_score" placeholder="Company Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="HR Interview Score" required="required" />
+        <input type="text" name="test_score" placeholder="Company Test Score(0-10)" required="required" />
+		<input type="text" name="interview_score" placeholder="HR Interview Score(0-10)" required="required" />
 
         <button type="Predict" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
